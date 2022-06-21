@@ -10,7 +10,7 @@ class ContentList extends StatelessWidget {
     Key? key,
     required this.title,
     required this.contentList,
-     this.isOriginal = false,
+    this.isOriginal = false,
   }) : super(key: key);
 
   @override
@@ -46,6 +46,5 @@ class ContentList extends StatelessWidget {
         )
       ],
     );
-    ;
   }
 }

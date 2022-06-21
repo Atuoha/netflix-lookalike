@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
             sliver: SliverToBoxAdapter(
               key: PageStorageKey('playlist'),
               child: ContentList(
-                title: 'My Playlist',
+                title: 'My Playlists',
                 contentList: myList,
               ),
             ),

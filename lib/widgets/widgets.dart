@@ -6,3 +6,4 @@ export 'previews.dart';
 export 'single_preview.dart';
 export 'content_list.dart';
 export 'single_contentlist.dart';
+export 'responsive.dart';
