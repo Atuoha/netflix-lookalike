@@ -10,7 +10,7 @@ class NavigationScreen extends StatefulWidget {
 
 class _NavigationScreenState extends State<NavigationScreen> {
   final List<Widget> _screens = const [
-    HomeScreen(),
+    HomeScreen(key: PageStorageKey('home')),
     Scaffold(),
     Scaffold(),
     Scaffold(),
@@ -37,6 +37,13 @@ class _NavigationScreenState extends State<NavigationScreen> {
     return Scaffold(
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        unselectedItemColor: Colors.grey,
+        selectedFontSize: 11,
+        unselectedFontSize: 11,
+        selectedItemColor: Colors.white,
+        currentIndex: _currentIndex,
+        backgroundColor: Colors.black,
         onTap: changeScreenIndex,
         items: _items
             .map(

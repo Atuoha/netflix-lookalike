@@ -19,7 +19,7 @@ class ContentList extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          padding: const EdgeInsets.symmetric(horizontal: 17.0),
           child: Text(
             title,
             style: const TextStyle(
@@ -31,7 +31,7 @@ class ContentList extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Container(
-          margin: const EdgeInsets.only(left: 24),
+          margin: const EdgeInsets.only(left: 17),
           height: isOriginal ? 550 : 220,
           child: ListView.builder(
             padding: EdgeInsets.zero,
